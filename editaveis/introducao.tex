@@ -33,15 +33,13 @@ de dispositivos móveis, e a \textit{Plataforma de Cidadania Digital}, ambos rel
 (APF) e de responsabilidade do Ministério do Planejamento, Desenvolvimento e Gestão (MPDG) \cite{BRASIL} que, atualmente,
 correspondem ao Ministério da Economia(ME).
 
-Uma das iniciativas do MP envolveu a criação de um programa de \textit{Trans de Serviços Públicos} denominado \textit{Kit de Transformação},
-composto de seis fases independentes entre si: \textit{Questione}, \textit{Personalize}, \textit{Reinvente}, \textit{Facilite},
-\textit{Integre} e \textit{Comunique} \cite{BRASIL2017}. O presente trabalho está relacionado à fase \textit{Facilite}, esta fase
-provê recursos e ferramentas na tentativa de simplificar e digitizar serviços a partir de uma solução tecnológica. A fase pode ser concluída
-quando simplificações no serviço estiverem implantadas.
+Uma das iniciativas do MP envolveu a criação de um programa de \textit{Trans de Serviços Públicos} denominado
+\textit{Kit de Transformação},composto de seis fases independentes entre si: \textit{Questione}, \textit{Personalize},
+\textit{Reinvente}, \textit{Facilite},\textit{Integre} e \textit{Comunique} \cite{BRASIL2017}.
 
-
-Dentro do Ministério do Planejamento, Gestão e Desenvolvimento (MP), a partir do Departamento INOVA, da Secretaria de Gestão (SEGES),
-foram adotadas perspectivas de fundamental importância, que propõe a perspectiva de melhoria dos serviços,
+O presente trabalho está relacionado à fase \textit{Facilite}, esta fase provê recursos e ferramentas na tentativa de simplificar
+e digitizar serviços a partir de uma solução tecnológica. A conclusão dessa fase é atingida quando as simplificações no serviço
+estiverem implantadas.
 
 Em vista deste cenário de digitalização do serviço público, é de suma importância garantir a qualidade dos serviços digitalizados
 devido aos efeitos nos domínios nacionais e internacionais. De acordo com~\cite{myers2004art}, é preciso que as características
@@ -53,22 +51,28 @@ A garantia da qualidade das etapas intermediárias entre requisitos e o produto 
 verificação através de uma perspectiva específica, avaliando se o software desenvolvido está de acordo com os requisitos
 estabelecidos e acordados~\cite{wallace1989software}.
 
-
-
-Atualmente, o \textit{Technology Research and Application Center} (ITRAC), unidade acadêmica da Universidade de Brasília -
-Campus Gama, está
-
-Em cenários nos quais os requisitos não foram inicialmente bem definidos, são instáveis, voláteis ou, até mesmo, inexistentes,
+Nos cenários nos quais os requisitos não foram inicialmente bem definidos, são instáveis, voláteis ou, até mesmo, inexistentes,
 os testadores podem encontrar o problema do oráculo~\cite{barr2015oracle}, tornando difícil a identificação do comportamento atual
 do serviço digitalizado corresponde ao comportamento esperado, ou se esse comportamento está errado. A problemática em se testar sem
 requisitos está relacionada ao contexto deste trabalho.
 
-Dado este cenário de
+O processo de validação dos serviços digitalizados do governo brasileiro possuem uma natureza crítica. Os serviços utilizados no
+contexto deste trabalho não possuem uma documentação formal de requisitos e o código-fonte não é acessível à equipe de teste, o que
+impossibilita a extração de informações. Dado este contexto, foi desenvolvido um processo de validação sistematizado que garante
+a qualidade da digitalização dos serviços, este processo foi definido baseado na estratégia proposta por \cite{elcock2006testing} e
+no conceito de Teste Exploratório, sugerido por \cite{whittaker2009exploratory}, usando a metáfora do turista como uma estratégia
+para guiar a descoberta de requisitos e regras de negócios, além de sistematizar a criação e execução dos casos de teste.
 
 \section{Problema de Pesquisa}
 
- Os serviços utilizados no contexto deste trabalho não possuem uma documentação formal de requisitos e o código-fonte não é acessível
- à equipe de teste, o que impossibilita a extração de informações. Desta forma,
+Há indícios de que o perfil do testador tenha algum impacto na aplicação das tours utilizadas na metáfora do turista proposta por
+\cite{whittaker2009exploratory}, visto que os casos de teste gerados e suas sequências variam muito a depender do testador. Sendo
+assim, a forma como os casos de teste são criados podem implicar na produtividade da equipe a depender do nível de expertise do
+testador.
+
+Nesse contexto, a pergunta de pesquisa definida neste trabalho é:
+
+\textit{"Como maximizar a produtividade de uma equipe de teste manual no contexto de digitização de serviços públicos?"}
 
 \section{Justificativa}
 
