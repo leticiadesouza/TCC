@@ -1,11 +1,13 @@
 \chapter[Metodologia]{Metodologia}
 
-Este capítulo tem por objetivo descrever a metodologia utilizada além dos fluxos seguidos para atingir o obejtivo da pesquisa.
+Este capítulo tem por objetivo descrever a metodologia utilizada além dos fluxos seguidos para atingir o obejtivo da pesquisa. 
 
 
 \section{Metodologias de Pesquisa}
 
 \section{Escolhas Metodológicas}
+
+% lembrar de descrever sobre a acaracterística de ser uma pesquisa de desenvolvimento e revisão bibliográfica.
 
 \subsection{Processo de revisão sistemática}
 
@@ -27,14 +29,14 @@ Evidências impíricas podem ser obtidas através do uso de uma variedade de té
 
 \subsubsection{Objetivos e Questões de Pesquisa}
 
-\par Através da busca pelo que tem sido publicado sobre testes exploratórios no contexto de desenvolvimento de software, enxerga-se a possibilidade de entender o que se pode obter de mais relevante sobre tal domínio para dar continuidade às pesquisas nessa área.
+\par Através da busca pelo que tem sido publicado sobre sistemas de recomendação no contexto de testes manuais de software, enxerga-se a possibilidade de entender o que se pode obter de mais relevante sobre tal domínio para embasar o trabalho proposto.
 
-\par Dessa forma, objetivando analisar o atual quadro de pesquisa e desenvolvimento utilizando testes exploratórios dentro do contexto de desenvolvimento de softwares, foram levantadas as seguintes questões de pesquisa: 
+\par Dessa forma, objetivando analisar o atual quadro de pesquisa em sistemas de recomendação dentro do contexto de testes  manuais de software, foram levantadas as seguintes questões de pesquisa, derivadas do GQM \textit{Goal Question Metric}: 
 
 \begin{itemize}
-    \item Q1. De que formas os testes exploratórios podem auxiliar na cobertura de testes \textit{front-end}?
-    \item Q2. Por que utilizar testes exploratórios no contexto de desenvolvimento de software?
-    \item Q3. De que formas os testes exploratórios contribuem para uma melhor usabilidade do sistema?
+    \item Q1. 
+    \item Q2. 
+    \item Q3. 
 \end{itemize}
 
 \par Estudar as problemáticas levantadas pelas questões definidas permitiu com que se realizasse uma pesquisa bibliográfica com o objetivo de identificar diferentes linhas de pesquisa na área. 
@@ -69,26 +71,18 @@ Através desse conceito é possível criar critérios de avaliação para determ
 Responder às questões levantadas exigiu as buscas utilizando as strings apresentadas na próxima seção (3) e, afim de executar o planejamento, a \textit{string} escolhida foi utilizada nas três bases escolhidas, sendo que, todos os artigos resultantes da busca foram coletados para análise. 
 
 \section{Execução}
-A primeira \textit{string} utilizada foi "\textit{exploratory test AND development}", que originou o seguinte resultado:
+A primeira \textit{string} utilizada foi "\textit{"recommender system" AND "exploratory test"}", que originou o seguinte resultado:
 
 \begin{table}[H]
 \begin{tabular}{c|c|c|c}
 \textit{String}                                                                   & \textit{Scopus} & \textit{ACM} & \textit{IEEE} \\ \hline
-\begin{tabular}[c]{@{}c@{}}"exploratory test" AND\\ "development"\end{tabular} & 82               & 8           & 357           
+\begin{tabular}[c]{@{}c@{}}"recommender" AND\\ "exploratory test"\end{tabular} & 82               & 8           & 357           
 \end{tabular}
 \end{table}
 
 A \textit{string} de busca inicial resultou um vasto número de artigos que envolviam os termos escolhidos, de modo que as questões de pesquisa não eram abordadas em muitos dos resultados. A análise de relevância de cada artigo obtido com essa \textit{string} foi realizada superficialmente e, percebendo a divergência dos assuntos com os objetivos de pesquisa, foi necessário refinar a \textit{string}, utilizando de termos relacionados ao contexto dos testes exploratórios. 
 
-Embora o resultado tenha sido bastante extenso, foi possível perceber uma relação entre o conceito de testes exploratórios e a palavra-chave \textit{feature testing}, o que gerou um novo conceito para utilizar e refinar a \textit{string} de busca. Alguns dos artigos mais relevantes para responder às questões da pesquisa foram:
-
-\begin{itemize}
-    \item \textit{How is exploratory testing used? A state-of-the-practice survey} \textit{pfahl2014exploratory}
-    \item \textit{An experimental evaluation of approaches to feature testing in the mobile phone applications domain.} \textit{do2007experimental}
-    
-\end{itemize}
-
-No próximo ciclo de busca foi incluída a palavra-chave citada, que desencadeou a seguinte \textit{string}: \textit{"exploratory test" AND "feature testing" AND development}. Entretanto, os resultados obtidos nas bases foram muito irrelevantes, resultando, inclusive, artigos que o primeiro ciclo de busca já havia retornado. 
+No próximo ciclo de busca foi incluída a palavra-chave citada, que desencadeou a seguinte \textit{string}: \textit{"exploratory test" AND "allocation" AND "recommender system"}. Entretanto, os resultados obtidos nas bases foram muito irrelevantes, resultando, inclusive, artigos que o primeiro ciclo de busca já havia retornado. 
 
 Sendo assim, a \textit{string} sofreu modificações novamente para se adaptar às questões levantadas. A partir desse resultado, optou-se por retirar o conceito de \textit{feature testing}, substituindo pelo conceito de \textit{usability}, formando a seguinte \textit{string}: \textit{"exploratory test" AND "usability" AND development}. 
 
@@ -123,32 +117,3 @@ Realizando todas estas buscas, pôde-se aplicar o conceito de \textit{sensitivid
 
 À partir desse resultado, percebe-se uma \textit{sensitividade} de 48\% e uma precisão de 42\%, finalizando os ciclos de busca com 28 artigos relevantes selecionados.  
 
-\section{Análise dos Resultados}
-
-Através da realização dessa RSL foi possível identificar algumas áreas que os Testes Exploratórios estão constantemente vinculados, como: \textit{usability}, \textit{validation} e \textit{fron-end development}. 
-
-As interfaces gráficas do usuário são um fator crítico para que os softwares sejam bem sucedidos, principalmente devido às expectativas sobre interfaces gráficas interativas (GUI), afinal, defeitos de interface do usuário são perceptíveis e suas impressões afetam a funcionalidade do produto \textit{pichler2008test}.
-
-\textit{suranto2015exploratory} \textit{suranto2015exploratory} mostrou em seu método de testar apresentado, que os testadores podem interagir com o sistema de qualquer maneira que entenderem, usando informações fornecidas pelo sistema e reagindo, geralmente, explorando o sistema e funcionalidades sem nenhuma restrição. 
-
-\textit{bach2003exploratory} \textit{bach2003exploratory} mostra que teste de GUI segue uma abordagem exploratória e que este é definido à medida em que o testador controla ativamente o desenho dos testes e de que maneira eles serão realizados, além de usar informações obtidas durante os próprios testes para projetar novos e melhores testes. 
-
-Ainda no trabalho \textit{bach2003exploratory} também é apresentado que o suporte a ferramentas por parte do tipo de teste abordado nesta pesquisa, aprimora a capacidade de testadores humanos, porque reduz a quantidade de trabalho e oferece espaço para explorar o uso de um software sob vários pontos de vista. 
-
-O fato de poder proporcionar o teste pela perspectiva de diversos usuários, favorece os aspectos como usabilidade e capacidade de resposta fornecendo uma série de benefícios, como a integração dos planos de testes com o sistema em teste, por exemplo. 
-
-Ainda assim, segundo \textit{bach2003exploratory} \textit{bach2003exploratory} os testes exploratórios permitem com que o poder do cérebro humano seja usado para encontrar erros e verificar funcionalidades sem restrições preconcebidas. 
-
-\section{Considerações Finais}
-
-Em vista dos artigos relacionados a esta pesquisa, para assegurar a qualidade do software, a utilização de técnicas que reduzam a existência de erros torna-se necessária. Segundo  Whittaker \textit{whittaker2009exploratory}, existem duas categorias principais dentre as maneiras de manter erros fora do ecossistema do software e minimizar as falhas: prevenção de erros e detecção de defeitos.
-
-As maneiras as quais Whittaker se refere compreendem técnicas geralmente orientadas ao desenvolvedor (escrita de melhores especificações, revisões de código, utilização de ferramentas de análise estática, execução de testes unitários, entre outros), enquanto a detecção de defeitos consiste na realização de análises dinâmicas, pelas quais o testador busca defeitos no sistema, geralmente por meio da aplicação de testes automatizados ou manuais.
-
-Foi possível, ainda, através da leitura de  experimentos controlados, perceber as comparações em relação à  eficiência de detecção de defeitos de testes exploratórios e testes baseados em casos de teste. Como mostrou Itkonen \textit{itkonen2007defect}, enquanto a literatura tradicional de testes enfatiza os casos de teste, o teste exploratório enfatiza as habilidades do testador individual durante a execução do teste e não depende de casos de teste pré-projetados.
-
-A partir do entendimento sobre o que tem se relacionado com o conceito de testes exploratórios no desenvolvimento, é notório que o método "explore e encontre" \textit{suranto2015exploratory} é eficaz para se verificar as funcionalidades e detectar erros no sistema. 
-
-Em síntese, o uso da técnica de teste exploratório pode ser útil para ser adotado em projetos ágeis devido à sua praticidade, não requirindo muito tempo para a criação dos planos de teste, o que demonstra o que poderia ser uma adesão positiva por parte das equipes ágeis, ao contrário dos métodos baseados em \textit{script} \textit{suranto2015exploratory}. 
-
-Além disso, além de incentivar a colaboração entre os desenvolvedores e as partes interessadas no sistema, uma abordagem como esta, dentro de uma equipe de desenvolvedores, poderia estimular a prática do teste, visto todos os aspectos humanos abordados nesta pesquisa.	
