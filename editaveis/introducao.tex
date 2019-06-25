@@ -1,127 +1,19 @@
-\chapter[Introdução]{Introdução}
-%\addcontentsline{toc}{chapter}{Introdução}
+\chapter{Introdução}        
 \label{ch:introducao}
+% A atividade de teste é essencial dentro do contexto da Engenharia de Software objetivando a validação do comportamento
+% do software e identificação de possíveis problemas de funcionamento. Nas últimas décadas, tem sido estabelecidas
+% técnicas, critérios, métodos e ferramentas para a produção de software a fim de acompanhar a crescente utilização de
+% sistemas por parte da maioria das práticas da atividade humana~\cite{maldonado2004introduccao}.
 
-A atividade de teste é essencial dentro do contexto da Engenharia de Software objetivando a validação do comportamento
-do software e identificação de possíveis problemas de funcionamento. Nas últimas décadas, tem sido estabelecidas
-técnicas, critérios, métodos e ferramentas para a produção de software a fim de acompanhar a crescente utilização de
-sistemas por parte da maioria das práticas da atividade humana~\cite{maldonado2004introduccao}.
+% Através da examinação diretamente do software em execução, o teste fornece um \textit{feedback} realista de seu comportamento,
+% o que o torna o complemento inevitável de outras técnicas de análise e garantia de qualidade na indústria~\cite{bertolino2007software}.
 
-Através da examinação diretamente do software em execução, o teste fornece um \textit{feedback} realista de seu comportamento,
-o que o torna o complemento inevitável de outras técnicas de análise e garantia de qualidade na indústria~\cite{bertolino2007software}.
+    \input{editaveis/secao-introducao/contexto.tex}
+    
+    \input{editaveis/secao-introducao/problema}
 
-\section{Contextualização}
+    \input{editaveis/secao-introducao/objetivos}
 
-Através do advento da evolução da tecnologia e expansão da internet surge a expressão \textit{Governo Digital},
-que se refere ao uso de tecnologias digitais como uma estratégia de modernização de um Governo, que adota a tecnologia
-da informação e comunicação (TIC) para prover serviços~\cite{fang2002government}. O termo \textit{e-Gov} surgiu no final da década de 1990 e cresceu a um tamanho considerável desde então. Nos últimos
-anos, deu origem a várias conferências de cunho científico, aumentando seu conteúdo e posição no que se refere a outros
-campos de pesquisa e disciplinas~\cite{gronlund2005introducing}.
+    \input{editaveis/secao-introducao/metodologia}
 
-No Brasil, embora as medidas de modernização do setor público tenham começado a ser adotadas na década de 70, as ênfases se deram
-apenas com a crise fiscal dos anos 80, onde a intervenção estatal ficou conhecida como reforma da gestão pública que, aliada as
-TICs, proporcionou com que os governos no Brasil oferecessem serviços públicos eletrônicos à população no início da década de
-2000~\cite{przeybilovicz2015desenvolvimento}.
-
-Atualmente, o Governo Federal tem oferecido suporte às agências brasileiras para que busquem a transferências de seus serviços
-para \textit{serviços digitalizados}, promovendo uma aproximação entre os governos e a sociedade, diminuindo o esforço do governo
-em ter que buscar o entendimento sobre as necessidades do cidadão \textit{(citizen-centric)} e aumentando a capacidade de reação
-sobre as necessidades determinadas por eles \textit{(citizen-driven)}.
-
-Diante deste cenário, foram publicados decretos que definiram a \textit{Política de Governança Digital}, que possui como objetivo
-ampliar e simplificar o acesso dos cidadãos brasileiros aos serviços públicos digitais, inclusive por meio
-de dispositivos móveis, e a \textit{Plataforma de Cidadania Digital}, ambos relacionados ao âmbito da Administração Pública Federal
-(APF) e de responsabilidade do Ministério do Planejamento, Desenvolvimento e Gestão (MPDG) \cite{BRASIL} que, atualmente,
-correspondem ao Ministério da Economia(ME).
-
-Uma das iniciativas do MP envolveu a criação de um programa de \textit{Trans de Serviços Públicos} denominado
-\textit{Kit de Transformação},composto de seis fases independentes entre si: \textit{Questione}, \textit{Personalize},
-\textit{Reinvente}, \textit{Facilite},\textit{Integre} e \textit{Comunique} \cite{BRASIL2017}.
-
-O presente trabalho está relacionado à fase \textit{Facilite}, esta fase provê recursos e ferramentas na tentativa de simplificar
-e digitizar serviços a partir de uma solução tecnológica. A conclusão dessa fase é atingida quando as simplificações no serviço
-estiverem implantadas.
-
-Em vista deste cenário de digitalização do serviço público, é de suma importância garantir a qualidade dos serviços digitalizados
-devido aos efeitos nos domínios nacionais e internacionais. De acordo com~\cite{myers2004art}, é preciso que as características
-dos projetos sejam levadas em consideração no momento de definição da estratégia de teste para assegurar que a verificação e
-a validação sejam economicamente viáveis, analisando a complexidade e quantidade de caminhos envolvidos para que se atinja a
-qualidade desejada.
-
-A garantia da qualidade das etapas intermediárias entre requisitos e o produto real pode ser assegurada pela atividade de
-verificação através de uma perspectiva específica, avaliando se o software desenvolvido está de acordo com os requisitos
-estabelecidos e acordados~\cite{wallace1989software}.
-
-Nos cenários nos quais os requisitos não foram inicialmente bem definidos, são instáveis, voláteis ou, até mesmo, inexistentes,
-os testadores podem encontrar o problema do oráculo~\cite{barr2015oracle}, tornando difícil a identificação do comportamento atual
-do serviço digitalizado corresponde ao comportamento esperado, ou se esse comportamento está errado. A problemática em se testar sem
-requisitos está relacionada ao contexto deste trabalho.
-
-O processo de validação dos serviços digitalizados do governo brasileiro possuem uma natureza crítica. Os serviços utilizados no
-contexto deste trabalho não possuem uma documentação formal de requisitos e o código-fonte não é acessível à equipe de teste, o que
-impossibilita a extração de informações. Dado este contexto, foi desenvolvido um processo de validação sistematizado que garante
-a qualidade da digitalização dos serviços, este processo foi definido baseado na estratégia proposta por \cite{elcock2006testing} e
-no conceito de Teste Exploratório, sugerido por \cite{whittaker2009exploratory}, usando a metáfora do turista como uma estratégia
-para guiar a descoberta de requisitos e regras de negócios, além de sistematizar a criação e execução dos casos de teste.
-
-\section{Problema de Pesquisa}
-
-A forma como os casos de teste são criados dentro de uma equipe pode implicar na produtividade a depender do nível de expertise dos
-testadores. Dentro do presente contexto, sabe-se que a experiência dos testadores relacionados aos serviços disponibilizados
-pode variar bastante, devido às variações de nível de escolaridade, experiência com testes, tipos de testes, técnicas já utilizadas
-e outras variáveis que serão tratadas mais afundo ao longo deste trabalho.
-
-Por este motivo, a problemática relacionada a estes pontos está relacionada com a produtividade das equipes de teste manual quando
-voltadas à digitalização de serviços públicos. 
-
-%Há algumas questões de pesquisas relacionadas a este trabalho, que serão abordadas a partir do modelo
-%\textit{Goal Question Metric} (GQM), na seção X desse trabalho, especificamente.
-
-Sendo assim, a pergunta geral de pesquisa definida neste trabalho é:
-
-\textit{"Como maximizar a produtividade de uma equipe de teste manual no contexto de digitalização de serviços públicos?"}
-
-\section{Justificativa}
-
-Há indícios de que o perfil do testador tenha algum impacto na aplicação das tours utilizadas na metáfora do turista proposta por
-\cite{whittaker2009exploratory}, visto que os casos de teste gerados e suas sequências variam muito a depender do testador.
-O entendimento desse perfil e suas principais características pode trazer alguns benefícios para uma equipe de testes.
-
-Normalmente, casos de teste são alocados por gerentes para que sejam executados pelos testadores que estiverem disponíveis em 
-determinado momento. Em vista disso, uma das formas de se maximizar a produtividade em uma equipe de testes é alocar casos de teste de acordo com o 
-perfil de testadores~\cite{miranda2012recommender}. Entretanto, a alocação de teste manual não é uma tarefa trivial visto que,
-em grandes empresas, o gerentes de teste são responsáveis por alocar grandes números de casos de teste para vários testadores.
-
-Sistemas de recomendação têm sido propostos para alocar tarefas a perfis específicos baseado em análises de alocações anteriores, 
-como comprovam os trabalhos de \cite{anvik2006should} e \cite{miranda2012recommender}. Estes trabalhos impulsionam uma nova utilização de sistema de recomendação 
-que motiva este trabalho, visto que o desenvolvimento de um sistema de recomendação pode auxiliar na alocação de casos de teste
-para uma equipe de testadores, buscando maximizar a eficiência do mesmo e contribuir com grandes equipes.
-
-
-\section{Objetivos}
-\subsection{Objetivo Geral}
-
-Obter perfis de testadores utilizando características e experiência do domínio para alocação automática de casos de teste,
-utilizando a equipe de transformação de serviços do governo do ITRAC - Information Technology and Application Center.
-
-\subsection{Objetivos Específicos}
-
-\begin{itemize}
-		\item Identificar a interferência que o perfil do testador tem na eficiência dos testes;
-		\item Propor uma atribuição automática de casos de teste adequada ao perfil do testador; 
-		\item Analisar dados registrados nos ciclos de teste;
-	\end{itemize}
-
-\section{Organização do Trabalho}
-
-Este trabalho de conclusão de curso está organizado nos seguintes capítulos:
-
-\begin{itemize}
-    \item \textbf{Capítulo \ref{ch:introducao} - Introdução:} apresenta Contextualização, justificativa, problema de pesquisa, justificativa e objetivos.
-    \item \textbf{Capítulo \ref{ch:referencial} - Referencial teórico:} descreve os conceitos que fundamentam o trabalho reunindo conhecimento necessário para que se compreenda a pesquisa realizada. O capítulo é subdividido nas seções \textit{Governo Digital}, \textit{Testes Exploratórios} e \textit{Sistema de Recomendação};
-    \item \textbf{Capítulo \ref{ch:suporte} - Suporte tecnológico:} apresenta as ferramentas que suportarão as atividades de desenvolvimento de software, gerenciamento, documentação, dentre outras.
-    \item \textbf{Capítulo \ref{ch:proposta} - Proposta:} detalha os procedimentos de seleção de padrões de projeto e classificação dos mesmos.
-    \item \textbf{Capítulo \ref{ch:metodologia} - Metodologia:} estabelece os procedimentos a serem seguidos do início até a conclusão do trabalho;
-    \item \textbf{Capítulo \ref{ch:resultados} - Resultados parciais:} apresenta os resultados alcançados durante o TCC1.
-    \item \textbf{Capítulo \ref{ch:consideracoes} - Considerações finais:} relata o status do trabalho alcançado até a execução do TCC1 e os resultados esperados para o TCC2.
-\end{itemize}
+    \input{editaveis/secao-introducao/organizacao-trabalho}
